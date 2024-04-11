@@ -11,7 +11,7 @@ In that .jenkinsfile we need to write the below code.
 	        stage('Checkout') {
 	            steps {
 	                // Checkout the Terraform scripts from the GitHub repository
-	                git 'https://github.com/jeffrijake/vishnutest.git'
+	                git 'https://github.com/vishnuparuchuri/vishnutest.git'
 	            }
 	        }
 	        
