@@ -21,10 +21,6 @@ Step -3 - After that i have configured the jenkins with admin username and passw
 Step -4 - After that i have installed the **Git Plugin and Git server plugin** to integrate my git repo with the jenkins.
 
 Step -5 -  After that i have push one small terraform code in .tf file to my repo which i have integrated with jenkins. Find the code below which i have written and pushed:
-
-	provider "aws" {
-	  region  = "us-east-1"
-	}
 	
 	resource "aws_instance" "My_Demo_1" {
 	  ami = "ami-02f3f602d23f1659d"
