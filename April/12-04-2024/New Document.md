@@ -22,41 +22,7 @@ Step -4 - After that i have installed the **Git Plugin and Git server plugin** t
 
 Step -5 -  After that i have push one small terraform code in .tf file to my repo which i have integrated with jenkins. 
 
-Step -6 - Now i have written pipeline code which i already shared in previous documents in .jenkinsfile. Find the code below again:
-
-	pipeline {
-		    agent any
-		    
-		    stages {
-		        stage('Checkout') {
-		            steps {
-		                // Checkout the Terraform scripts from the GitHub repository
-		                git 'https://github.com/vishnuparuchuri/vishnutest.git'
-		            }
-		        }
-		        
-		        stage('Terraform Init') {
-		            steps {
-		                // Initialize the Terraform working directory
-		                sh 'terraform init'
-		            }
-		        }
-		        
-		        stage('Terraform Plan') {
-		            steps {
-		                // Generate an execution plan
-		                sh 'terraform plan -out=tfplan'
-		            }
-		        }
-		        
-		        stage('Terraform Apply') {
-		            steps {
-		                // Apply the changes
-		                sh 'terraform apply -auto-approve tfplan'
-		            }
-		        }
-		    }
-		}
+Step -6 - Now i have written pipeline code which i already shared in previous documents in .jenkinsfile.
 
 Step -7 - Now i have configured the pipeline job in the jenkins by giving this pipele code path in that job.
 
