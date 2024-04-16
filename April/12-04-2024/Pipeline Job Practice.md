@@ -24,8 +24,6 @@ Step -5 -  After that i have push one small terraform code in .tf file to my rep
 
 	provider "aws" {
 	  region  = "us-east-1"
-      access_key = "AKIA5RLT3WGSCYJO526R"
-      secret_key = "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"
 	}
 	
 	resource "aws_instance" "My_Demo_1" {
